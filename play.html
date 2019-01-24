@@ -1,0 +1,28 @@
+<html>
+   <head>
+       <style>
+           #boxes {
+               width: 200px;
+               height: 200px;
+               margin: 20px;
+               background: skyblue;
+               display: inline-block;
+               border: solid black;
+           }
+           h1 {
+               color: black;
+               font-family: 'Courier New', Courier, monospace;
+               margin-left: 42%;
+           }
+        </style>
+   </head> 
+   <body>
+        <br>
+        <h1>{{ phrase }}</h1>
+        <div id="body">
+            {% for x in range(0,times): %}
+            <div id="boxes" style="background: {{ box_color }}" ></div>
+            {% endfor %}
+        </div>
+   </body>
+</html>
